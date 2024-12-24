@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="todo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="macbookair">
+      <div class="macbookair1">
+        <div class="frame">
+          <button id="showTaskModal" class="add_taskbutton">Add Task</button>
+        </div>
+
+        <div class="container">
+          <div class="card" id="todoCard">
+            <div class="card_content">
+              <div class="space_between">
+                <img
+                  class="img_icon"
+                  src="./images/Rectangle 10.png"
+                  alt="icon"
+                />
+                <span>To do</span>
+              </div>
+              <span class="number_list">5</span>
+            </div>
+            <div class="task_list" id="todoList"></div>
+          </div>
+
+          <div class="card" id="inProgressCard">
+            <div class="card_content">
+              <div class="space_between">
+                <img
+                  class="img_icon"
+                  src="./images/Rectangle 11.png"
+                  alt="icon"
+                />
+                <span>In progress</span>
+              </div>
+              <span class="number_list">5</span>
+            </div>
+            <div class="task_list" id="inProgressList"></div>
+          </div>
+
+          <div class="card" id="doneCard">
+            <div class="card_content">
+              <div class="space_between">
+                <img
+                  class="img_icon"
+                  src="./images/Rectangle 12.png"
+                  alt="icon"
+                />
+                <span>Done</span>
+              </div>
+              <span class="number_list">5</span>
+            </div>
+            <div class="task_list" id="doneList"></div>
+          </div>
+
+          <div class="card" id="blockedCard">
+            <div class="card_content">
+              <div class="space_between">
+                <img
+                  class="img_icon"
+                  src="./images/Rectangle 13.png"
+                  alt="icon"
+                />
+                <span>Blocked</span>
+              </div>
+              <span class="number_list">5</span>
+            </div>
+            <div class="task_list" id="blockedList"></div>
+          </div>
+        </div>
+
+        <div id="taskbarModal" class="taskbar_container">
+          <div class="taskbar_background">
+            <h2 class="Task_title">Enter task</h2>
+            <input
+              id="taskName"
+              type="text"
+              placeholder="Task name..."
+              class="task_input"
+            />
+            <div>
+              <select id="taskStatus" class="status_select">
+                <option selected disabled>Select status</option>
+                <option value="todo">To do</option>
+                <option value="in-progress">In progress</option>
+                <option value="done">Done</option>
+                <option value="blocked">Blocked</option>
+              </select>
+            </div>
+            <button id="submitTask" class="submit_button">Submit</button>
+          </div>
+        </div>
+
+        <div id="taskbarEditModal" class="taskbar_edit_container">
+          <div class="taskbar_edit_background">
+            <h2 class="Task_title">Edit task</h2>
+            <input
+              id="editTaskName"
+              type="text"
+              placeholder="Task name..."
+              class="task_input"
+            />
+            <div>
+              <select id="editTaskStatus" class="status_select">
+                <option selected disabled>Select status</option>
+                <option value="todo">To do</option>
+                <option value="in-progress">In progress</option>
+                <option value="done">Done</option>
+                <option value="blocked">Blocked</option>
+              </select>
+            </div>
+            <button id="editTaskSubmit" class="submit_button">Done</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="todo.js"></script>
+  </body>
+</html>

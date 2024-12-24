@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: rgba(26, 26, 26, 1);
+}
+
+.macbookair {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  max-width: 1280px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 0 auto;
+}
+
+.frame {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  margin-bottom: 24px;
+  height: 109px;
+}
+.add_taskbutton {
+  background: rgba(0, 163, 0, 1);
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.36px;
+  color: rgba(255, 255, 255, 1);
+  padding: 0px, 20px, 0px, 20px;
+  gap: 10px;
+  width: 109px;
+  height: 44px;
+  margin-right: 50px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  gap: 24px;
+}
+
+.card {
+  flex-direction: column;
+  height: 672px;
+  width: 280px;
+  border: 1px solid rgba(51, 51, 51, 1);
+  background: rgba(16, 16, 16, 1);
+  border-radius: 12px;
+  gap: 10px;
+  padding: 18px;
+  overflow: auto;
+}
+
+.card::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.card_content {
+  display: flex;
+  justify-content: space-between;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.78px;
+  text-align: left;
+  color: #ffffff;
+}
+.number_list {
+  width: 8px;
+  height: 15px;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+  text-align: left;
+  color: #999999;
+}
+.card_content .space_between {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.img_icon {
+  width: 12px;
+  height: 12px;
+}
+
+.taskbar_container {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+}
+
+.taskbar_background {
+  width: 370px;
+  height: 376px;
+  background-color: #1e1e1e;
+  border: 1px solid #999999;
+  border-radius: 16px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Task_title {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.05px;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.task_input,
+.status_select {
+  width: 290px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #555;
+  background-color: #1e1e1e;
+  color: #999999;
+}
+.submit_button {
+  width: 290px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #555;
+  background-color: #1e1e1e;
+  color: white;
+}
+.status_select {
+  width: 290px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #555;
+  background-color: #1e1e1e;
+  color: #999999;
+  cursor: pointer;
+}
+
+.submit_button {
+  background-color: #00a300;
+  border: none;
+  cursor: pointer;
+  margin-top: 50px;
+}
+.status_select option {
+  background-color: #1e1e1e;
+  color: white;
+}
+.task_list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e1e1e;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  color: #fff;
+  white-space: nowrap;
+  overflow-x: auto; /* Enable horizontal scroll when content is too long */
+  text-overflow: ellipsis;
+}
+
+.task_item::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar */
+}
+
+.task_item {
+  -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.task_item span {
+  display: flex;
+  align-items: center;
+}
+
+.task_item .task_actions {
+  display: flex;
+  gap: 10px;
+}
+.task_item .task_name {
+  white-space: nowrap; /* Prevents text wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.task_item .task_actions i {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.task_name {
+  margin: 0px 8px;
+  width: 148px;
+  height: 30px;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 14.52px;
+  text-align: left;
+  color: #d9d9d9;
+}
+
+.taskbar_edit_container {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+}
+
+.taskbar_edit_background {
+  width: 370px;
+  height: 376px;
+  background-color: #1e1e1e;
+  border: 1px solid #999999;
+  border-radius: 16px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
