@@ -1,0 +1,67 @@
+[debug] [2024-12-24T14:56:11.378Z] ----------------------------------------------------------------------
+[debug] [2024-12-24T14:56:11.381Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\otgon\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-12-24T14:56:11.382Z] CLI Version:   13.29.1
+[debug] [2024-12-24T14:56:11.382Z] Platform:      win32
+[debug] [2024-12-24T14:56:11.382Z] Node Version:  v20.17.0
+[debug] [2024-12-24T14:56:11.382Z] Time:          Tue Dec 24 2024 22:56:11 GMT+0800 (Ulaanbaatar Standard Time)
+[debug] [2024-12-24T14:56:11.382Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-24T14:56:11.390Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-24T14:56:11.390Z] > authorizing via signed-in user (otgonnaran@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\otgon\OneDrive\Desktop\Pinecone Coding\Html CSS JS\Todoapp
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-12-24T14:56:22.936Z] Checked if tokens are valid: true, expires at: 1735055323389
+[debug] [2024-12-24T14:56:22.937Z] Checked if tokens are valid: true, expires at: 1735055323389
+[debug] [2024-12-24T14:56:22.944Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-12-24T14:56:23.828Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-12-24T14:56:23.829Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project todo-app-f23b5 (Todo-app) 
+[info] 
+=== Hosting Setup
+[debug] [2024-12-24T14:56:25.524Z] Checked if tokens are valid: true, expires at: 1735055323389
+[debug] [2024-12-24T14:56:25.524Z] Checked if tokens are valid: true, expires at: 1735055323389
+[debug] [2024-12-24T14:56:25.524Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/todo-app-f23b5 [none]
+[debug] [2024-12-24T14:56:25.887Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/todo-app-f23b5 200
+[debug] [2024-12-24T14:56:25.887Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/todo-app-f23b5 {"projectId":"todo-app-f23b5","projectNumber":"939077806422","displayName":"Todo-app","name":"projects/todo-app-f23b5","resources":{"hostingSite":"todo-app-f23b5"},"state":"ACTIVE","etag":"1_55dfff0c-600d-4941-bec5-e26022e9edb3"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-12-24T14:57:42.496Z] ----------------------------------------------------------------------
+[debug] [2024-12-24T14:57:42.499Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\otgon\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-12-24T14:57:42.499Z] CLI Version:   13.29.1
+[debug] [2024-12-24T14:57:42.499Z] Platform:      win32
+[debug] [2024-12-24T14:57:42.500Z] Node Version:  v20.17.0
+[debug] [2024-12-24T14:57:42.500Z] Time:          Tue Dec 24 2024 22:57:42 GMT+0800 (Ulaanbaatar Standard Time)
+[debug] [2024-12-24T14:57:42.500Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-24T14:57:42.507Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-24T14:57:42.507Z] > authorizing via signed-in user (otgonnaran@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\otgon\OneDrive\Desktop\Pinecone Coding\Html CSS JS\Todoapp
+
